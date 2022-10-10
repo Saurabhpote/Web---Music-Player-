@@ -1,0 +1,106 @@
+/* background color of hole page */
+body{
+    background-color:black;
+}
+/* margine and padding of this page */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* font for navigatipn bar */
+nav{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+}
+nav ul li{
+    padding: 0 10px;
+}
+.brand img{
+    cursor: pointer;
+    width: 100px;
+}
+li{
+    cursor: pointer;
+}
+/* styles for container */
+.container{
+    min-height: 80vh;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url(bc.jpg);
+    background-size: cover;
+}
+
+/* set style to bottom */
+.bottom{
+    background-color: black;
+    color: rgb(0, 180, 9);
+    height: 100px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    bottom: 0;
+}
+/* play icon margin */
+.icon{
+    margin: 14px;
+}
+.icon :hover{
+    opacity: 80%;
+    color: rgb(170, 255, 174);
+}
+/* song bar width */
+#bar{
+    width: 80vw;
+    cursor:pointer;
+    
+}
+/* song design */
+.songitem{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+   
+}
+.songitem img{
+    width: 50px;
+    margin: 0 20px;
+    border-radius: 10px;
+   
+}
+.songitem:hover{
+cursor: pointer;
+color: rgb(0, 180, 9);
+}
+
+.songinfo{
+    position: absolute;
+    left: 10vw;
+}
+
+
+.gif{
+   width: 75px;
+   display: flex;
+   align-items: center;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
